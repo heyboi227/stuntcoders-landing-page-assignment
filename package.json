@@ -1,0 +1,27 @@
+{
+  "name": "stuntcoders-landing-page-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyboi227/stuntcoders-landing-page-assignment.git"
+  },
+  "author": "Miloš Jeknić <milosjeknic@hotmail.rs>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyboi227/stuntcoders-landing-page-assignment/issues"
+  },
+  "homepage": "https://github.com/heyboi227/stuntcoders-landing-page-assignment#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

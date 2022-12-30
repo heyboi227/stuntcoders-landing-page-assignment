@@ -1,0 +1,10 @@
+@use "sass:math";
+
+.testing {
+    display: flex;
+    width: percentage(math.div(5, 7));
+}
+
+body {
+    background: blue;
+}
