@@ -19,6 +19,20 @@ gulp.task(
       },
     });
     gulp.watch("app/scss/**/*.scss", gulp.series(["sass"]));
+    gulp.watch(
+      "app/*.html",
+      gulp.series((done) => {
+        browserSync.reload();
+        done();
+      })
+    );
+    gulp.watch(
+      "app/js/**/*.js",
+      gulp.series((done) => {
+        browserSync.reload();
+        done();
+      })
+    );
   })
 );
 
