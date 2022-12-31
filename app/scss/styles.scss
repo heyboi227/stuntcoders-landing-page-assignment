@@ -1,3 +1,43 @@
+/* poppins-300 - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/poppins-v20-latin-300.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/poppins-v20-latin-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/poppins-v20-latin-300.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/poppins-v20-latin-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/poppins-v20-latin-300.svg#Poppins') format('svg');
+    /* Legacy iOS */
+}
+
+/* poppins-300italic - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300italic.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/poppins-v20-latin-300italic.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/poppins-v20-latin-300italic.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/poppins-v20-latin-300italic.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/poppins-v20-latin-300italic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/poppins-v20-latin-300italic.svg#Poppins') format('svg');
+    /* Legacy iOS */
+}
+
 /* poppins-regular - latin */
 @font-face {
     font-family: 'Poppins';
@@ -163,9 +203,12 @@ $abs-position: absolute;
 $rel-position: relative;
 $color-dark-blue: #000336;
 $color-dark-blue-1: #000339;
+$color-dark-blue-2: #002366;
 $color-blue: #0f1b4c;
+$color-blue-1: #063183;
 $color-light-blue: #0689ff;
-$color-light-gray: #F5FAFE;
+$color-light-gray: #f5fafe;
+$color-dark-gray: #757575;
 $header-color: #e6f0ff;
 $light-color: #687690;
 
@@ -211,7 +254,10 @@ nav,
 .guide-flex,
 .featured-flex,
 .featured-card-flex,
-.info-flex {
+.info-flex,
+.facts-flex,
+.survey-flex,
+.featured-properties-flex {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -223,7 +269,9 @@ nav,
 .guide-flex,
 .bar,
 .featured,
-.featured-info {
+.featured-info,
+.featured-properties,
+.featured-properties-flex {
     margin: 0px auto;
 }
 
@@ -312,7 +360,8 @@ button {
 }
 
 .welcome-second,
-.how-to p {
+.how-to p,
+.survey p {
     line-height: 2;
 }
 
@@ -351,12 +400,18 @@ button {
 
 .clients-logo p,
 .how-to p,
-.featured p {
+.featured p,
+.survey p,
+.average-price p,
+.fact h2 {
     color: $light-color;
 }
 
 .clients-logo p,
-.how-to p {
+.how-to p,
+.survey p,
+.average-price p,
+.fact h2 {
     font-size: 1vw;
 }
 
@@ -385,7 +440,8 @@ button {
 }
 
 .how-to h1,
-.featured h1 {
+.featured h1,
+.survey h1 {
     font-size: 3vw;
     color: $color-dark-blue-1;
     font-weight: 600;
@@ -501,4 +557,124 @@ button {
 
 .arrow {
     width: 2vw;
+}
+
+.survey-flex {
+    width: 80%;
+    justify-content: center;
+}
+
+.survey {
+    width: 28vw;
+    position: $abs-position;
+    right: 7vw;
+    top: 20vw;
+}
+
+.survey p {
+    margin-top: 2vw;
+    width: 70%;
+}
+
+.house {
+    width: 65vw;
+}
+
+.users {
+    margin-top: 3vw;
+    width: 20vw;
+}
+
+.stocks-arrow {
+    position: $abs-position;
+    top: 4vw;
+    left: 18vw;
+    width: 3vw;
+}
+
+.average-price {
+    background-color: white;
+    padding: 3vw;
+    position: $abs-position;
+    top: 6.8vw;
+    left: 2vw;
+    width: min-content;
+    z-index: 1;
+    border-radius: 0 0 12px 12px;
+}
+
+.average-price h1 {
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+
+.left {
+    position: $abs-position;
+    left: 0;
+    top: -2vw;
+}
+
+.facts-flex {
+    position: $abs-position;
+    top: 55vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    justify-content: space-between;
+}
+
+.fact h1 {
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.fact h2 {
+    font-weight: 400;
+}
+
+.featured-properties {
+    position: $rel-position;
+    width: 80%;
+    border-radius: 20px;
+    background-color: $color-blue-1;
+    color: white;
+}
+
+.featured-properties-flex {
+    width: 80%;
+    justify-content: center;
+}
+
+.featured-properties-flex img {
+    width: 30vw;
+}
+
+.featured-properties-text {
+    width: 100%;
+}
+
+.featured-properties h1 {
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+.featured-properties h2 {
+    font-weight: 300;
+    margin-bottom: 3vw;
+    font-size: 1.2vw;
+}
+
+.btn-inverted {
+    border-radius: 8px;
+    background-color: white;
+    color: $color-dark-blue-2;
+}
+
+.btn-inverted:hover {
+    color: $color-dark-gray;
+}
+
+.btn-get-started {
+    padding: 0.6vw 0.8vw;
 }
