@@ -117,7 +117,10 @@ nav,
 .header-content-flex,
 .clients-logo-flex,
 .logo-flex,
-.guide-flex {
+.guide-flex,
+.featured-flex,
+.featured-card-flex,
+.info-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -126,8 +129,15 @@ nav,
 nav,
 .header-content-flex,
 .clients-logo,
-.guide-flex {
+.guide-flex,
+.bar,
+.featured,
+.featured-info {
   margin: 0px auto;
+}
+
+.header-content-flex {
+  position: relative;
 }
 
 nav {
@@ -150,8 +160,7 @@ button {
   justify-content: center;
 }
 
-.logo-menu,
-.header-content-flex {
+.logo-menu {
   width: 65%;
 }
 
@@ -179,16 +188,13 @@ button {
 
 .nav-menu li,
 .login-signup-btn a,
-.btn-about-us {
+.btn-about-us,
+.btn-guidelines {
   font-size: 1.1vw;
 }
 
 .nav-menu li {
   padding: 2vw;
-}
-
-.header-content-flex {
-  width: 80%;
 }
 
 .header-content-flex {
@@ -222,7 +228,7 @@ button {
 .btn-about-us {
   padding: 1vw 2vw;
   position: absolute;
-  top: 41vw;
+  top: 35vw;
 }
 
 .clients-logo-flex {
@@ -253,8 +259,13 @@ button {
 }
 
 .clients-logo p,
-.how-to p {
+.how-to p,
+.featured p {
   color: #687690;
+}
+
+.clients-logo p,
+.how-to p {
   font-size: 1vw;
 }
 
@@ -272,39 +283,131 @@ button {
 }
 
 .bar {
-  font-size: 6vw;
-  height: 6vw;
+  width: 5vw;
+  height: 0.5vw;
+  border-radius: 12px;
+  background-color: #000339;
 }
 
 .how-to {
   text-align: center;
 }
 
-.how-to h1 {
+.how-to h1,
+.featured h1 {
   font-size: 3vw;
+  color: #000339;
+  font-weight: 600;
 }
 
 .guides {
-  margin-top: 4vw;
+  margin-top: 5vw;
 }
 
 .guide-flex {
   justify-content: space-around;
   width: 60%;
+  margin-bottom: 5vw;
 }
 
 .guide {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  text-align: center;
 }
 
 .guide-img {
   padding-bottom: 1vw;
 }
 
+.guide-img img {
+  width: 3vw;
+}
+
 .guide h2 {
-  font-size: 1.1vw;
+  font-size: 1.3vw;
   font-weight: 500;
+  margin-bottom: 0.8vw;
+}
+
+.a-light-blue {
+  color: #0689ff;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.btn-guidelines {
+  border-radius: 12px;
+  padding: 1vw 2vw;
+}
+
+.featured {
+  padding: 10vw;
+  margin-top: 10vw;
+  background-color: #F5FAFE;
+}
+
+.featured-info {
+  width: 80%;
+}
+
+.featured-info h2 {
+  font-weight: 600;
+  font-size: 1.3vw;
+  margin-top: 1vw;
+}
+
+.featured-flex {
+  justify-content: space-between;
+  margin-bottom: 5vw;
+}
+
+.featured-card-flex {
+  justify-content: space-around;
+}
+
+.featured-card {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.featured-card img {
+  width: 25vw;
+}
+
+.featured p {
+  font-size: 0.9vw;
+}
+
+.info-flex {
+  width: 90%;
+  padding: 2vw 0;
+  justify-content: space-between;
+}
+
+.info {
+  width: 8vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info img {
+  width: 1.5vw;
+}
+
+.sqft {
+  width: 1.3vw !important;
+}
+
+.average-text {
+  position: relative;
+}
+
+.arrow {
+  width: 2vw;
 }
