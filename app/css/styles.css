@@ -143,7 +143,10 @@ nav,
 .info-flex,
 .facts-flex,
 .survey-flex,
-.featured-properties-flex {
+.featured-properties-flex,
+.footer-link-flex,
+.social-logos-flex,
+.copyright-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -157,7 +160,8 @@ nav,
 .featured,
 .featured-info,
 .featured-properties,
-.featured-properties-flex {
+.featured-properties-flex,
+.copyright-flex {
   margin: 0px auto;
 }
 
@@ -214,7 +218,8 @@ button {
 .nav-menu li,
 .login-signup-btn a,
 .btn-about-us,
-.btn-guidelines {
+.btn-guidelines,
+.btn-get-started {
   font-size: 1.1vw;
 }
 
@@ -289,7 +294,10 @@ button {
 .featured p,
 .survey p,
 .average-price p,
-.fact h2 {
+.fact h2,
+.links li,
+.contact p,
+.copyright-flex p {
   color: #687690;
 }
 
@@ -297,7 +305,10 @@ button {
 .how-to p,
 .survey p,
 .average-price p,
-.fact h2 {
+.fact h2,
+.links li,
+.contact p,
+.copyright-flex p {
   font-size: 1vw;
 }
 
@@ -521,18 +532,22 @@ button {
 .featured-properties {
   position: relative;
   width: 80%;
+  padding: 7vw 5vw;
   border-radius: 20px;
   background-color: #063183;
   color: white;
 }
 
 .featured-properties-flex {
-  width: 80%;
+  width: 85%;
   justify-content: center;
 }
 
 .featured-properties-flex img {
-  width: 30vw;
+  position: absolute;
+  width: 17vw;
+  bottom: -1.5vw;
+  right: 13vw;
 }
 
 .featured-properties-text {
@@ -563,4 +578,60 @@ button {
 
 .btn-get-started {
   padding: 0.6vw 0.8vw;
+}
+
+footer {
+  margin-top: 5vw;
+}
+
+.footer-link-flex {
+  justify-content: space-evenly;
+}
+
+.links h1,
+.contact h1 {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.link-list {
+  margin-top: 1.2vw;
+}
+
+.links li {
+  padding-bottom: 1vw;
+}
+
+.contact {
+  width: 20%;
+  margin-bottom: 1.75vw;
+}
+
+.contact p {
+  padding-top: 2.5vw;
+  padding-bottom: 3vw;
+}
+
+.social-logos-flex {
+  width: 20%;
+  justify-content: space-between;
+}
+
+.social-logos-flex img {
+  height: 0.75vw;
+}
+
+.links a {
+  color: #687690 !important;
+}
+
+.copyright-flex {
+  margin-top: 4vw;
+  width: 76%;
+  justify-content: space-between;
+  margin-bottom: 4vw;
+}
+
+.copyright-flex img {
+  width: 7vw;
 }
