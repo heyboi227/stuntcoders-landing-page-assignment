@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/heyboi227/stuntcoders-landing-page-assignment#readme",
   "devDependencies": {
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^3.0.2",
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0"
   },
